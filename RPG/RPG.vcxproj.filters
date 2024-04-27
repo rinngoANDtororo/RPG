@@ -1,22 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ソース ファイル">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Define">
+      <UniqueIdentifier>{cfb07327-b6cd-4524-8d7a-5eaffe841abd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="SystemMain">
+      <UniqueIdentifier>{d6b4bc2c-e8e3-4d94-b8da-392ce9da394f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="リソース ファイル">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{aa2f7d5e-b826-4753-8fc4-831bb3b53f4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemMain\Looper">
+      <UniqueIdentifier>{a4be3cbb-ab16-42bb-a6b3-62309e2e957e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemMain\Error">
+      <UniqueIdentifier>{c7a8275a-3a21-4be9-9115-d263df4fc349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemMain\FPS">
+      <UniqueIdentifier>{553559aa-80c0-4b34-8d00-e76ae0056280}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemMain\Parameter">
+      <UniqueIdentifier>{b95d91a7-38c2-4331-b4f2-95455a3d918a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemMain\CalcUtils">
+      <UniqueIdentifier>{9dda736a-9281-4570-81d1-3ca7bd48bea1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemMain\Keyboard">
+      <UniqueIdentifier>{5eb92ee4-527c-47e5-acd5-9c737e89adc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemMain\Resource">
+      <UniqueIdentifier>{51926320-f616-49e0-aa6a-3bb611dd81c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemMain\Resource\Image">
+      <UniqueIdentifier>{3f1134a2-95ee-4595-bddb-9199752ec235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemMain\Resource\BGM">
+      <UniqueIdentifier>{cabcc447-e550-4d49-b2f6-8ed043fbcd59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemMain\Resource\SE">
+      <UniqueIdentifier>{28da5c18-e71e-44f4-853c-5689d8a7b1af}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>SystemMain</Filter>
     </ClCompile>
+    <ClCompile Include="SystemMain.cpp">
+      <Filter>SystemMain</Filter>
+    </ClCompile>
+    <ClCompile Include="Define.cpp">
+      <Filter>Define</Filter>
+    </ClCompile>
+    <ClCompile Include="Looper.cpp">
+      <Filter>SystemMain\Looper</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SystemMain.h">
+      <Filter>SystemMain</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Looper.h">
+      <Filter>SystemMain\Looper</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
