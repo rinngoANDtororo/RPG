@@ -1,4 +1,5 @@
 #include "Looper.h"
+#include "Macro.h"
 
 Looper::Looper()
 {

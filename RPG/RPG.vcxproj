@@ -20,13 +20,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Define.cpp" />
+    <ClCompile Include="Error.cpp" />
     <ClCompile Include="Looper.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SystemMain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Define.h" />
+    <ClInclude Include="Error.h" />
     <ClInclude Include="Looper.h" />
+    <ClInclude Include="Macro.h" />
     <ClInclude Include="SystemMain.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

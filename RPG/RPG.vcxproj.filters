@@ -54,6 +54,9 @@
     <ClCompile Include="Looper.cpp">
       <Filter>SystemMain\Looper</Filter>
     </ClCompile>
+    <ClCompile Include="Error.cpp">
+      <Filter>SystemMain\Error</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SystemMain.h">
@@ -64,6 +67,12 @@
     </ClInclude>
     <ClInclude Include="Looper.h">
       <Filter>SystemMain\Looper</Filter>
+    </ClInclude>
+    <ClInclude Include="Error.h">
+      <Filter>SystemMain\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="Macro.h">
+      <Filter>SystemMain\Error</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
