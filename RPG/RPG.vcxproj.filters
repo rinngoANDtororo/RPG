@@ -43,6 +43,15 @@
     <Filter Include="SystemMain\Resource\src">
       <UniqueIdentifier>{7910f474-4ae1-4517-ae09-42bac1ae1f87}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SystemMain\Resource\src\Image">
+      <UniqueIdentifier>{7cb7d15d-5fc7-4431-8063-1545e2eb11b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemMain\Resource\src\SE">
+      <UniqueIdentifier>{c317d907-89c2-46ce-806a-1f8e5aff3f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemMain\Resource\src\BGM">
+      <UniqueIdentifier>{dc3c472d-62f0-4aba-b987-5d6940b7a721}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -65,6 +74,9 @@
     </ClCompile>
     <ClCompile Include="BGM.cpp">
       <Filter>SystemMain\Resource\BGM</Filter>
+    </ClCompile>
+    <ClCompile Include="SE.cpp">
+      <Filter>SystemMain\Resource\SE</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -90,6 +102,9 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="BGM.h">
       <Filter>SystemMain\Resource\BGM</Filter>
+    </ClInclude>
+    <ClInclude Include="SE.h">
+      <Filter>SystemMain\Resource\SE</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

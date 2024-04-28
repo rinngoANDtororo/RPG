@@ -25,6 +25,7 @@
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="Looper.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SE.cpp" />
     <ClCompile Include="SystemMain.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -35,6 +36,7 @@
     <ClInclude Include="Looper.h" />
     <ClInclude Include="Macro.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="SE.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="SystemMain.h" />
   </ItemGroup>
