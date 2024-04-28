@@ -40,6 +40,9 @@
     <Filter Include="SystemMain\Resource\SE">
       <UniqueIdentifier>{28da5c18-e71e-44f4-853c-5689d8a7b1af}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SystemMain\Resource\src">
+      <UniqueIdentifier>{7910f474-4ae1-4517-ae09-42bac1ae1f87}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -59,6 +62,9 @@
     </ClCompile>
     <ClCompile Include="Image.cpp">
       <Filter>SystemMain\Resource\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="BGM.cpp">
+      <Filter>SystemMain\Resource\BGM</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -81,5 +87,12 @@
     <ClInclude Include="Image.h">
       <Filter>SystemMain\Resource\Image</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="BGM.h">
+      <Filter>SystemMain\Resource\BGM</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RPG.rc" />
   </ItemGroup>
 </Project>

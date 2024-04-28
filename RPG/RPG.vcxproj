@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BGM.cpp" />
     <ClCompile Include="Define.cpp" />
     <ClCompile Include="Error.cpp" />
     <ClCompile Include="Image.cpp" />
@@ -27,13 +28,18 @@
     <ClCompile Include="SystemMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BGM.h" />
     <ClInclude Include="Define.h" />
     <ClInclude Include="Error.h" />
     <ClInclude Include="Image.h" />
     <ClInclude Include="Looper.h" />
     <ClInclude Include="Macro.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="SystemMain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RPG.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
