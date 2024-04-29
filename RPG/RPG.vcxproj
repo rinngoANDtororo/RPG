@@ -29,6 +29,7 @@
     <ClCompile Include="Keyboad.cpp" />
     <ClCompile Include="Looper.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Pad.cpp" />
     <ClCompile Include="Parameter.cpp" />
     <ClCompile Include="SE.cpp" />
     <ClCompile Include="SystemMain.cpp" />
@@ -43,6 +44,7 @@
     <ClInclude Include="Keyboad.h" />
     <ClInclude Include="Looper.h" />
     <ClInclude Include="Macro.h" />
+    <ClInclude Include="Pad.h" />
     <ClInclude Include="Parameter.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SE.h" />

@@ -58,6 +58,9 @@
     <Filter Include="SystemMain\Resource\src\Font">
       <UniqueIdentifier>{e58c133d-beb0-4f05-af50-1230bdb4e510}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SystemMain\Pad">
+      <UniqueIdentifier>{cb54ffc5-221f-43ef-a4d9-53b331c495d4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -99,6 +102,9 @@
     <ClCompile Include="CalcUtils.cpp">
       <Filter>SystemMain\CalcUtils</Filter>
     </ClCompile>
+    <ClCompile Include="Pad.cpp">
+      <Filter>SystemMain\Pad</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SystemMain.h">
@@ -138,6 +144,9 @@
     </ClInclude>
     <ClInclude Include="Parameter.h">
       <Filter>SystemMain\Parameter</Filter>
+    </ClInclude>
+    <ClInclude Include="Pad.h">
+      <Filter>SystemMain\Pad</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
