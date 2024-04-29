@@ -52,6 +52,12 @@
     <Filter Include="SystemMain\Resource\src\BGM">
       <UniqueIdentifier>{dc3c472d-62f0-4aba-b987-5d6940b7a721}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SystemMain\Resource\Font">
+      <UniqueIdentifier>{020a23b8-0239-420f-a384-15180b47164b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemMain\Resource\src\Font">
+      <UniqueIdentifier>{e58c133d-beb0-4f05-af50-1230bdb4e510}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -78,11 +84,16 @@
     <ClCompile Include="SE.cpp">
       <Filter>SystemMain\Resource\SE</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="CalcUtils.cpp">
       <Filter>SystemMain\CalcUtils</Filter>
     </ClCompile>
     <ClCompile Include="Fps.cpp">
       <Filter>SystemMain\FPS</Filter>
+=======
+    <ClCompile Include="Font.cpp">
+      <Filter>SystemMain\Resource\Font</Filter>
+>>>>>>> feature/Resource
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -112,11 +123,16 @@
     <ClInclude Include="SE.h">
       <Filter>SystemMain\Resource\SE</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="CalcUtils.h">
       <Filter>SystemMain\CalcUtils</Filter>
     </ClInclude>
     <ClInclude Include="Fps.h">
       <Filter>SystemMain\FPS</Filter>
+=======
+    <ClInclude Include="Font.h">
+      <Filter>SystemMain\Resource\Font</Filter>
+>>>>>>> feature/Resource
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
