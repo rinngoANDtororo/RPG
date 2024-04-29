@@ -23,6 +23,8 @@
     <ClCompile Include="CalcUtils.cpp" />
     <ClCompile Include="Define.cpp" />
     <ClCompile Include="Error.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="Fps.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="Looper.cpp" />
     <ClCompile Include="main.cpp" />

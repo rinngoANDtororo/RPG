@@ -84,14 +84,14 @@
     <ClCompile Include="SE.cpp">
       <Filter>SystemMain\Resource\SE</Filter>
     </ClCompile>
-    <ClCompile Include="CalcUtils.cpp">
-      <Filter>SystemMain\CalcUtils</Filter>
-    </ClCompile>
-	  <ClCompile Include="Fps.cpp">
-		  <Filter>SystemMain\FPS</Filter>
-	  </ClCompile>
     <ClCompile Include="Font.cpp">
       <Filter>SystemMain\Resource\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Fps.cpp">
+      <Filter>SystemMain\FPS</Filter>
+    </ClCompile>
+    <ClCompile Include="CalcUtils.cpp">
+      <Filter>SystemMain\CalcUtils</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -121,14 +121,14 @@
     <ClInclude Include="SE.h">
       <Filter>SystemMain\Resource\SE</Filter>
     </ClInclude>
-    <ClInclude Include="CalcUtils.h">
-      <Filter>SystemMain\CalcUtils</Filter>
-    </ClInclude>
-	  <ClInclude Include="Fps.h">
-		  <Filter>SystemMain\FPS</Filter>
-	  </ClInclude>
     <ClInclude Include="Font.h">
       <Filter>SystemMain\Resource\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Fps.h">
+      <Filter>SystemMain\FPS</Filter>
+    </ClInclude>
+    <ClInclude Include="CalcUtils.h">
+      <Filter>SystemMain\CalcUtils</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
