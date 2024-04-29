@@ -87,6 +87,18 @@
     <ClCompile Include="Font.cpp">
       <Filter>SystemMain\Resource\Font</Filter>
     </ClCompile>
+    <ClCompile Include="Fps.cpp">
+      <Filter>SystemMain\FPS</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboad.cpp">
+      <Filter>SystemMain\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Parameter.cpp">
+      <Filter>SystemMain\Parameter</Filter>
+    </ClCompile>
+    <ClCompile Include="CalcUtils.cpp">
+      <Filter>SystemMain\CalcUtils</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SystemMain.h">
@@ -117,6 +129,15 @@
     </ClInclude>
     <ClInclude Include="Font.h">
       <Filter>SystemMain\Resource\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Fps.h">
+      <Filter>SystemMain\FPS</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboad.h">
+      <Filter>SystemMain\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Parameter.h">
+      <Filter>SystemMain\Parameter</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
