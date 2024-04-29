@@ -52,6 +52,12 @@
     <Filter Include="SystemMain\Resource\src\BGM">
       <UniqueIdentifier>{dc3c472d-62f0-4aba-b987-5d6940b7a721}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SystemMain\Resource\Font">
+      <UniqueIdentifier>{020a23b8-0239-420f-a384-15180b47164b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemMain\Resource\src\Font">
+      <UniqueIdentifier>{e58c133d-beb0-4f05-af50-1230bdb4e510}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -77,6 +83,9 @@
     </ClCompile>
     <ClCompile Include="SE.cpp">
       <Filter>SystemMain\Resource\SE</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>SystemMain\Resource\Font</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +114,9 @@
     </ClInclude>
     <ClInclude Include="SE.h">
       <Filter>SystemMain\Resource\SE</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>SystemMain\Resource\Font</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
