@@ -30,6 +30,7 @@
     <ClCompile Include="Looper.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Pad.cpp" />
+    <ClCompile Include="Parameter.cpp" />
     <ClCompile Include="SE.cpp" />
     <ClCompile Include="SystemMain.cpp" />
   </ItemGroup>
@@ -45,6 +46,7 @@
     <ClInclude Include="Looper.h" />
     <ClInclude Include="Macro.h" />
     <ClInclude Include="Pad.h" />
+    <ClInclude Include="Parameter.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SE.h" />
     <ClInclude Include="Singleton.h" />
