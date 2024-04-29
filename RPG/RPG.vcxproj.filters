@@ -87,12 +87,6 @@
     <ClCompile Include="Font.cpp">
       <Filter>SystemMain\Resource\Font</Filter>
     </ClCompile>
-    <ClCompile Include="Fps.cpp">
-      <Filter>SystemMain\FPS</Filter>
-    </ClCompile>
-    <ClCompile Include="CalcUtils.cpp">
-      <Filter>SystemMain\CalcUtils</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SystemMain.h">
@@ -123,12 +117,6 @@
     </ClInclude>
     <ClInclude Include="Font.h">
       <Filter>SystemMain\Resource\Font</Filter>
-    </ClInclude>
-    <ClInclude Include="Fps.h">
-      <Filter>SystemMain\FPS</Filter>
-    </ClInclude>
-    <ClInclude Include="CalcUtils.h">
-      <Filter>SystemMain\CalcUtils</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
