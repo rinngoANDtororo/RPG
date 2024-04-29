@@ -23,7 +23,6 @@
     <ClCompile Include="CalcUtils.cpp" />
     <ClCompile Include="Define.cpp" />
     <ClCompile Include="Error.cpp" />
-    <ClCompile Include="Fps.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="Looper.cpp" />
     <ClCompile Include="main.cpp" />
@@ -35,6 +34,7 @@
     <ClInclude Include="CalcUtils.h" />
     <ClInclude Include="Define.h" />
     <ClInclude Include="Error.h" />
+    <ClInclude Include="Font.h" />
     <ClInclude Include="Fps.h" />
     <ClInclude Include="Image.h" />
     <ClInclude Include="Looper.h" />
