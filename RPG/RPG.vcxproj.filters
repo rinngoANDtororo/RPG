@@ -84,16 +84,20 @@
     <ClCompile Include="SE.cpp">
       <Filter>SystemMain\Resource\SE</Filter>
     </ClCompile>
-<<<<<<< HEAD
     <ClCompile Include="CalcUtils.cpp">
       <Filter>SystemMain\CalcUtils</Filter>
     </ClCompile>
-    <ClCompile Include="Fps.cpp">
-      <Filter>SystemMain\FPS</Filter>
-=======
     <ClCompile Include="Font.cpp">
       <Filter>SystemMain\Resource\Font</Filter>
->>>>>>> feature/Resource
+    </ClCompile>
+    <ClCompile Include="Fps.cpp">
+      <Filter>SystemMain\FPS</Filter>
+    </ClCompile>
+    <ClCompile Include="Pad.cpp">
+      <Filter>SystemMain\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboad.cpp">
+      <Filter>SystemMain\Keyboard</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -123,16 +127,20 @@
     <ClInclude Include="SE.h">
       <Filter>SystemMain\Resource\SE</Filter>
     </ClInclude>
-<<<<<<< HEAD
     <ClInclude Include="CalcUtils.h">
       <Filter>SystemMain\CalcUtils</Filter>
     </ClInclude>
     <ClInclude Include="Fps.h">
       <Filter>SystemMain\FPS</Filter>
-=======
+    </ClInclude>
     <ClInclude Include="Font.h">
       <Filter>SystemMain\Resource\Font</Filter>
->>>>>>> feature/Resource
+    </ClInclude>
+    <ClInclude Include="Pad.h">
+      <Filter>SystemMain\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboad.h">
+      <Filter>SystemMain\Keyboard</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

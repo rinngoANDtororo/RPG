@@ -23,9 +23,13 @@
     <ClCompile Include="CalcUtils.cpp" />
     <ClCompile Include="Define.cpp" />
     <ClCompile Include="Error.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="Fps.cpp" />
     <ClCompile Include="Image.cpp" />
+    <ClCompile Include="Keyboad.cpp" />
     <ClCompile Include="Looper.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Pad.cpp" />
     <ClCompile Include="SE.cpp" />
     <ClCompile Include="SystemMain.cpp" />
   </ItemGroup>
@@ -37,8 +41,10 @@
     <ClInclude Include="Font.h" />
     <ClInclude Include="Fps.h" />
     <ClInclude Include="Image.h" />
+    <ClInclude Include="Keyboad.h" />
     <ClInclude Include="Looper.h" />
     <ClInclude Include="Macro.h" />
+    <ClInclude Include="Pad.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SE.h" />
     <ClInclude Include="Singleton.h" />
