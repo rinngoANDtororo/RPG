@@ -9,7 +9,10 @@ Looper::~Looper()
 {
 }
 
-bool Looper::loop() const
+bool Looper::loop()
 {
+	_fps.draw();
+	_fps.wait();
+
 	return true;
 }
