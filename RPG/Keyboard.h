@@ -6,11 +6,11 @@
 
 using namespace std;
 
-class Keyboad :public Singleton<Keyboad>
+class Keyboard :public Singleton<Keyboard>
 {
-	Keyboad() = default;
-	~Keyboad() = default;
-	friend Singleton<Keyboad>;
+	Keyboard() = default;
+	~Keyboard() = default;
+	friend Singleton<Keyboard>;
 
 public:
 	bool update();
@@ -25,5 +25,5 @@ private:
 	array<int, KEY_NUM> _PressingCount{ 0 };
 	array<int, KEY_NUM> _ReleasingCount{ 0 };
 
-	bool isAvilableCode(int KeyCode);
+	bool isAvailableCode(int KeyCode);
 };

@@ -4,7 +4,7 @@
 #include<array>
 #include<DxLib.h>
 #include<algorithm>
-#include"Keyboad.h"
+#include"Keyboard.h"
 
 using namespace std;
 

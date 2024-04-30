@@ -1,6 +1,6 @@
-#include"Keyboad.h"
+#include"Keyboard.h"
 
-bool Keyboad::update()
+bool Keyboard::update()
 {
 	char nowHitKey[KEY_NUM];
 	GetHitKeyStateAll(nowHitKey);
@@ -25,7 +25,7 @@ bool Keyboad::update()
 	return true;
 }
 
-bool Keyboad::isAvilableCode(int KeyCode)
+bool Keyboard::isAvailableCode(int KeyCode)
 {
 	if ((0 <= KeyCode && KeyCode < KEY_NUM) == false)
 		return false;
@@ -33,25 +33,25 @@ bool Keyboad::isAvilableCode(int KeyCode)
 	return true;
 }
 
-int Keyboad::getPressingCount(int KeyCode)
+int Keyboard::getPressingCount(int KeyCode)
 {
-	if (isAvilableCode(KeyCode) == false)
+	if (isAvailableCode(KeyCode) == false)
 		return -1;
 
 	return _PressingCount[KeyCode];
 }
 
-int Keyboad::getReleasingCount(int KeyCode)
+int Keyboard::getReleasingCount(int KeyCode)
 {
-	if (isAvilableCode(KeyCode) == false)
+	if (isAvailableCode(KeyCode) == false)
 		return -1;
 
 	return _ReleasingCount[KeyCode];
 }
 
-bool Keyboad::getRepeatedInput(int KeyCode)
+bool Keyboard::getRepeatedInput(int KeyCode)
 {
-	if (isAvilableCode(KeyCode) == false)
+	if (isAvailableCode(KeyCode) == false)
 		return false;
 
 	if (_PressingCount[KeyCode] == 1 || (_PressingCount[KeyCode] >= 30 && _PressingCount[KeyCode] % 10 == 0))

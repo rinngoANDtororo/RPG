@@ -1,7 +1,7 @@
 #include "Looper.h"
 #include "Macro.h"
 #include "Font.h"
-#include "Keyboad.h"
+#include "Keyboard.h"
 #include "TitleScene.h"
 #include "GameScene.h"
 
@@ -17,7 +17,7 @@ Looper::~Looper()
 
 bool Looper::loop()
 {
-	Keyboad::getIns()->update();
+	Keyboard::getIns()->update();
 
 	_fps.draw();
 	_fps.wait();

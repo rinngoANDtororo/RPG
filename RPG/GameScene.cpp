@@ -1,6 +1,6 @@
 #include "GameScene.h"
 #include "DxLib.h"
-#include "Keyboad.h"
+#include "Keyboard.h"
 
 GameScene::GameScene(IOnSceneChangedListener* impl, const Parameter& parameter) :
 	AbstractScene(impl, parameter)
@@ -9,9 +9,9 @@ GameScene::GameScene(IOnSceneChangedListener* impl, const Parameter& parameter) 
 
 void GameScene::update()
 {
-	if (Keyboad::getIns()->getPressingCount(KEY_INPUT_SPACE) == 1)
+	if (Keyboard::getIns()->getPressingCount(KEY_INPUT_SPACE) == 1)
 	{
-		_implSceneChanged->onSceneChanged(Title, Parameter(), false);
+		_implSceneChanged->onSceneChanged(Title, Parameter(), true);
 	}
 }
 

@@ -1,6 +1,6 @@
 #include "TitleScene.h"
 #include "DxLib.h"
-#include "Keyboad.h"
+#include "Keyboard.h"
 
 TitleScene::TitleScene(IOnSceneChangedListener* impl, const Parameter& parameter) :
 	AbstractScene(impl, parameter)
@@ -9,7 +9,7 @@ TitleScene::TitleScene(IOnSceneChangedListener* impl, const Parameter& parameter
 
 void TitleScene::update()
 {
-	if (Keyboad::getIns()->getPressingCount(KEY_INPUT_SPACE) == 1)
+	if (Keyboard::getIns()->getPressingCount(KEY_INPUT_SPACE) == 1)
 	{
 		Parameter parameter;
 		_implSceneChanged->onSceneChanged(Game, parameter, true);

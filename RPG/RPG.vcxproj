@@ -29,7 +29,7 @@
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="IOnSceneChangedListener.h" />
-    <ClCompile Include="Keyboad.cpp" />
+    <ClCompile Include="Keyboard.cpp" />
     <ClCompile Include="Looper.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Pad.cpp" />
@@ -48,7 +48,7 @@
     <ClInclude Include="Fps.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="Image.h" />
-    <ClInclude Include="Keyboad.h" />
+    <ClInclude Include="Keyboard.h" />
     <ClInclude Include="Looper.h" />
     <ClInclude Include="Macro.h" />
     <ClInclude Include="Pad.h" />
