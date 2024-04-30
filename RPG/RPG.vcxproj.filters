@@ -61,6 +61,15 @@
     <Filter Include="SystemMain\Pad">
       <UniqueIdentifier>{cb54ffc5-221f-43ef-a4d9-53b331c495d4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Scene\AbstractScene">
+      <UniqueIdentifier>{dc9f08dd-b1c4-4129-93aa-1225fb45b27f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\TitleScene">
+      <UniqueIdentifier>{b1b62693-5197-4929-8e27-726eac499222}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\GameScene">
+      <UniqueIdentifier>{2fe8079e-c194-4ee4-ba62-60beb9682714}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -105,6 +114,18 @@
     <ClCompile Include="Pad.cpp">
       <Filter>SystemMain\Pad</Filter>
     </ClCompile>
+    <ClCompile Include="IOnSceneChangedListener.h">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractScene.cpp">
+      <Filter>Scene\AbstractScene</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>Scene\TitleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Scene\GameScene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SystemMain.h">
@@ -147,6 +168,18 @@
     </ClInclude>
     <ClInclude Include="Pad.h">
       <Filter>SystemMain\Pad</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractScene.h">
+      <Filter>Scene\AbstractScene</Filter>
+    </ClInclude>
+    <ClInclude Include="eScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
+      <Filter>Scene\TitleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>Scene\GameScene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

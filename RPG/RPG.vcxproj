@@ -19,13 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AbstractScene.cpp" />
     <ClCompile Include="BGM.cpp" />
     <ClCompile Include="CalcUtils.cpp" />
     <ClCompile Include="Define.cpp" />
     <ClCompile Include="Error.cpp" />
     <ClCompile Include="Font.cpp" />
     <ClCompile Include="Fps.cpp" />
+    <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="Image.cpp" />
+    <ClCompile Include="IOnSceneChangedListener.h" />
     <ClCompile Include="Keyboad.cpp" />
     <ClCompile Include="Looper.cpp" />
     <ClCompile Include="main.cpp" />
@@ -33,13 +36,17 @@
     <ClCompile Include="Parameter.cpp" />
     <ClCompile Include="SE.cpp" />
     <ClCompile Include="SystemMain.cpp" />
+    <ClCompile Include="TitleScene.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AbstractScene.h" />
     <ClInclude Include="BGM.h" />
     <ClInclude Include="Define.h" />
     <ClInclude Include="Error.h" />
+    <ClInclude Include="eScene.h" />
     <ClInclude Include="Font.h" />
     <ClInclude Include="Fps.h" />
+    <ClInclude Include="GameScene.h" />
     <ClInclude Include="Image.h" />
     <ClInclude Include="Keyboad.h" />
     <ClInclude Include="Looper.h" />
@@ -50,6 +57,7 @@
     <ClInclude Include="SE.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="SystemMain.h" />
+    <ClInclude Include="TitleScene.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="RPG.rc" />
