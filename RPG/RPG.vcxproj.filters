@@ -70,6 +70,15 @@
     <Filter Include="Scene\GameScene">
       <UniqueIdentifier>{2fe8079e-c194-4ee4-ba62-60beb9682714}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Scene\MapScene">
+      <UniqueIdentifier>{e19e596e-98a0-48c5-ad21-68f4dafb535f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\MapScene\WorldMap">
+      <UniqueIdentifier>{bb95fcb3-e86d-40f2-938d-4c46d532987b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\MapScene\AbstractMap">
+      <UniqueIdentifier>{a8469a62-7ee5-45ed-96c4-a3c38c5f67d7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -102,9 +111,6 @@
     <ClCompile Include="Fps.cpp">
       <Filter>SystemMain\FPS</Filter>
     </ClCompile>
-    <ClCompile Include="Keyboad.cpp">
-      <Filter>SystemMain\Keyboard</Filter>
-    </ClCompile>
     <ClCompile Include="Parameter.cpp">
       <Filter>SystemMain\Parameter</Filter>
     </ClCompile>
@@ -125,6 +131,19 @@
     </ClCompile>
     <ClCompile Include="GameScene.cpp">
       <Filter>Scene\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="MapScene.cpp">
+      <Filter>Scene\MapScene</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractMap.cpp">
+      <Filter>Scene\MapScene\AbstractMap</Filter>
+    </ClCompile>
+    <ClCompile Include="testMap.cpp">
+      <Filter>Scene\MapScene\WorldMap</Filter>
+    </ClCompile>
+    <ClCompile Include="testMap2.cpp">
+      <Filter>Scene\MapScene\WorldMap</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -160,9 +179,6 @@
     <ClInclude Include="Fps.h">
       <Filter>SystemMain\FPS</Filter>
     </ClInclude>
-    <ClInclude Include="Keyboad.h">
-      <Filter>SystemMain\Keyboard</Filter>
-    </ClInclude>
     <ClInclude Include="Parameter.h">
       <Filter>SystemMain\Parameter</Filter>
     </ClInclude>
@@ -180,6 +196,25 @@
     </ClInclude>
     <ClInclude Include="GameScene.h">
       <Filter>Scene\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="MapScene.h">
+      <Filter>Scene\MapScene</Filter>
+    </ClInclude>
+    <ClInclude Include="eMapNames.h">
+      <Filter>Scene\MapScene</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractMap.h">
+      <Filter>Scene\MapScene\AbstractMap</Filter>
+    </ClInclude>
+    <ClInclude Include="IOnMapChangedListener.h">
+      <Filter>Scene\MapScene</Filter>
+    </ClInclude>
+    <ClInclude Include="testMap.h">
+      <Filter>Scene\MapScene\WorldMap</Filter>
+    </ClInclude>
+    <ClInclude Include="testMap2.h">
+      <Filter>Scene\MapScene\WorldMap</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

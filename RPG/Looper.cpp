@@ -2,8 +2,10 @@
 #include "Macro.h"
 #include "Font.h"
 #include "Keyboard.h"
+
 #include "TitleScene.h"
 #include "GameScene.h"
+#include "MapScene.h"
 
 Looper::Looper()
 {
@@ -38,12 +40,19 @@ void Looper::onSceneChanged(const eScene scene, const Parameter& parameter, bool
 
 	switch (scene)
 	{
-	case Title:
+	case eScene::Title:
 		_sceneStack.push(std::make_shared<TitleScene>(this, parameter));
 		break;
 
-	case Game:
+	case eScene::Game:
 		_sceneStack.push(std::make_shared<GameScene>(this, parameter));
 		break;
+
+	case eScene::Map:
+		_sceneStack.push(std::make_shared<MapScene>(this, parameter));
+		break;
+
+	default:
+		ERR("ë∂ç›ÇµÇ»Ç¢SceneÇ≈Ç∑");
 	}
 }

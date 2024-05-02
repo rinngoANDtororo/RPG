@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AbstractMap.cpp" />
     <ClCompile Include="AbstractScene.cpp" />
     <ClCompile Include="BGM.cpp" />
     <ClCompile Include="CalcUtils.cpp" />
@@ -32,31 +33,40 @@
     <ClCompile Include="Keyboard.cpp" />
     <ClCompile Include="Looper.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MapScene.cpp" />
     <ClCompile Include="Pad.cpp" />
     <ClCompile Include="Parameter.cpp" />
     <ClCompile Include="SE.cpp" />
     <ClCompile Include="SystemMain.cpp" />
+    <ClCompile Include="testMap.cpp" />
+    <ClCompile Include="testMap2.cpp" />
     <ClCompile Include="TitleScene.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AbstractMap.h" />
     <ClInclude Include="AbstractScene.h" />
     <ClInclude Include="BGM.h" />
     <ClInclude Include="Define.h" />
+    <ClInclude Include="eMapNames.h" />
     <ClInclude Include="Error.h" />
     <ClInclude Include="eScene.h" />
     <ClInclude Include="Font.h" />
     <ClInclude Include="Fps.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="Image.h" />
+    <ClInclude Include="IOnMapChangedListener.h" />
     <ClInclude Include="Keyboard.h" />
     <ClInclude Include="Looper.h" />
     <ClInclude Include="Macro.h" />
+    <ClInclude Include="MapScene.h" />
     <ClInclude Include="Pad.h" />
     <ClInclude Include="Parameter.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SE.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="SystemMain.h" />
+    <ClInclude Include="testMap.h" />
+    <ClInclude Include="testMap2.h" />
     <ClInclude Include="TitleScene.h" />
   </ItemGroup>
   <ItemGroup>

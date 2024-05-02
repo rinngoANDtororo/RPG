@@ -4,8 +4,9 @@
 #include "Parameter.h"
 #include "AbstractScene.h"
 
-enum eScene
+enum class eScene
 {
 	Title,
-	Game
+	Game,
+	Map
 };

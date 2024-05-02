@@ -12,7 +12,7 @@ void TitleScene::update()
 	if (Keyboard::getIns()->getPressingCount(KEY_INPUT_SPACE) == 1)
 	{
 		Parameter parameter;
-		_implSceneChanged->onSceneChanged(Game, parameter, true);
+		_implSceneChanged->onSceneChanged(eScene::Map, parameter, false);
 	}
 }
 
