@@ -1,7 +1,7 @@
 #include"AbstractMap.h"
 
-AbstractMap::AbstractMap(CallBack impl):
-	_impl(impl)
+AbstractMap::AbstractMap(CallbackMapScene impl, const Parameter& parameter):
+	_onMapChanged(impl)
 {
 	
 }

@@ -5,7 +5,7 @@
 class testMap2 final :public AbstractMap
 {
 public:
-	testMap2(CallBack impl);
+	testMap2(CallbackMapScene impl, const Parameter& parameter);
 	~testMap2();
 
 	void update()override;

@@ -7,15 +7,15 @@
 
 using namespace std;
 
-typedef function<void(const eMapNames, const Parameter&, bool)> CallBack;
+typedef function<void(const eMapNames, const Parameter&, bool)> CallbackMapScene;
 
 class AbstractMap
 {
 protected:
-	CallBack _impl;
+	CallbackMapScene _onMapChanged;
 
 public:
-	AbstractMap(CallBack impl);
+	AbstractMap(CallbackMapScene impl, const Parameter& parameter);
 	virtual ~AbstractMap() = default;
 	virtual void update() = 0;
 	virtual void draw()const = 0;

@@ -1,6 +1,6 @@
 #include"testMap.h"
 
-testMap::testMap(CallBack impl):AbstractMap(impl)
+testMap::testMap(CallbackMapScene impl, const Parameter& parameter):AbstractMap(impl,parameter)
 {
 
 }
@@ -15,7 +15,7 @@ void testMap::update()
 	if (Keyboard::getIns()->getPressingCount(KEY_INPUT_RETURN) == 1)
 	{
 		Parameter param;
-		_impl(eMapNames::testMap2, param, false);
+		_onMapChanged(eMapNames::testMap2, param, false);
 	}
 }
 

@@ -4,9 +4,8 @@ MapScene::MapScene(IOnSceneChangedListener* impl, const Parameter& parameter) :
 	AbstractScene(impl, parameter)
 {
 	//本来ここでセーブデータに基づいた初期マップを決める。
-	auto p = bind(&MapScene::onMapChanged, this, placeholders::_1, placeholders::_2, placeholders::_3);
-	_WorldMap[eMapNames::testMap] = make_shared<testMap>(p);
-	_WorldMap[eMapNames::testMap2] = make_shared<testMap2>(p);
+	const auto pcallback = bind(&MapScene::onMapChanged, this, placeholders::_1, placeholders::_2, placeholders::_3);
+	_WorldMap[eMapNames::testMap] = make_shared<testMap>(pcallback);
 
 	_CurrentMap = eMapNames::testMap;
 }
@@ -22,8 +21,30 @@ void MapScene::draw()
 	_WorldMap[_CurrentMap]->draw();
 }
 
-void MapScene::onMapChanged(const eMapNames emapn, const Parameter& parameter, bool isMapClear)
+void MapScene::onMapChanged(const eMapNames nextmap, const Parameter& parameter, bool isMapClear)
 {
-	if (_WorldMap.find(emapn) != _WorldMap.end())
-		_CurrentMap = emapn;
+	_CurrentMap = nextmap;
+
+	if (_WorldMap.find(nextmap) == _WorldMap.end())
+		CreateNextMap(nextmap);//存在しないなら
+}
+
+void MapScene::CreateNextMap(eMapNames nextmap, const Parameter& parameter)
+{
+	const auto pcallback = bind(&MapScene::onMapChanged, this, placeholders::_1, placeholders::_2, placeholders::_3);
+
+	switch (nextmap)
+	{
+	case eMapNames::testMap:
+		_WorldMap[nextmap] = make_shared<testMap>(pcallback,parameter);
+		break;
+
+	case eMapNames::testMap2:
+		_WorldMap[nextmap] = make_shared<testMap2>(pcallback, parameter);
+		break;
+
+	default:
+		ERR("存在しないマップです");
+		break;
+	}
 }
