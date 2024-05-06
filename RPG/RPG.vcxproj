@@ -31,6 +31,7 @@
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="IOnSceneChangedListener.h" />
     <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="LoadCsv.cpp" />
     <ClCompile Include="Looper.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MapScene.cpp" />
@@ -47,6 +48,7 @@
     <ClInclude Include="AbstractScene.h" />
     <ClInclude Include="BGM.h" />
     <ClInclude Include="Define.h" />
+    <ClInclude Include="eEvent.h" />
     <ClInclude Include="eMapNames.h" />
     <ClInclude Include="Error.h" />
     <ClInclude Include="eScene.h" />
@@ -54,10 +56,11 @@
     <ClInclude Include="Fps.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="Image.h" />
-    <ClInclude Include="IOnMapChangedListener.h" />
     <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="LoadCsv.h" />
     <ClInclude Include="Looper.h" />
     <ClInclude Include="Macro.h" />
+    <ClInclude Include="MapCell.h" />
     <ClInclude Include="MapScene.h" />
     <ClInclude Include="Pad.h" />
     <ClInclude Include="Parameter.h" />

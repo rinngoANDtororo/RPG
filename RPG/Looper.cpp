@@ -3,6 +3,8 @@
 #include "Font.h"
 #include "Keyboard.h"
 
+#include "Image.h"
+
 #include "TitleScene.h"
 #include "GameScene.h"
 #include "MapScene.h"
@@ -11,6 +13,8 @@ Looper::Looper()
 {
 	Parameter parameter;
 	_sceneStack.push(std::make_shared<TitleScene>(this, parameter));
+
+	Image::getIns()->load();
 }
 
 Looper::~Looper()

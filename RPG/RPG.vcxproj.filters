@@ -79,6 +79,9 @@
     <Filter Include="Scene\MapScene\AbstractMap">
       <UniqueIdentifier>{a8469a62-7ee5-45ed-96c4-a3c38c5f67d7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Scene\MapScene\LoadCsv">
+      <UniqueIdentifier>{cfb4a5c7-f924-40cb-bcfd-6f507a36129f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -145,6 +148,9 @@
     <ClCompile Include="testMap2.cpp">
       <Filter>Scene\MapScene\WorldMap</Filter>
     </ClCompile>
+    <ClCompile Include="LoadCsv.cpp">
+      <Filter>Scene\MapScene\LoadCsv</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SystemMain.h">
@@ -207,14 +213,20 @@
     <ClInclude Include="AbstractMap.h">
       <Filter>Scene\MapScene\AbstractMap</Filter>
     </ClInclude>
-    <ClInclude Include="IOnMapChangedListener.h">
-      <Filter>Scene\MapScene</Filter>
-    </ClInclude>
     <ClInclude Include="testMap.h">
       <Filter>Scene\MapScene\WorldMap</Filter>
     </ClInclude>
     <ClInclude Include="testMap2.h">
       <Filter>Scene\MapScene\WorldMap</Filter>
+    </ClInclude>
+    <ClInclude Include="MapCell.h">
+      <Filter>Scene\MapScene</Filter>
+    </ClInclude>
+    <ClInclude Include="eEvent.h">
+      <Filter>Scene\MapScene</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadCsv.h">
+      <Filter>Scene\MapScene\LoadCsv</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

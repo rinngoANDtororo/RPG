@@ -21,5 +21,9 @@ void testMap2::update()
 
 void testMap2::draw()const
 {
+	for (int i = 0; i < _mapdata.size(); i++)
+		for (int j = 0; j < _mapdata[0].size(); j++)
+			DrawExtendGraph(64 * j, 64 * i, 64 + 64 * j, 64 + 64 * i, Image::getIns()->getMapChip(_mapdata[i][j]._layer1), TRUE);
+
 	DrawFormatString(0, 60, 0xff00ff, "testmap2");
 }
