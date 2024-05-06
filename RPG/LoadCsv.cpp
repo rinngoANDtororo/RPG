@@ -13,6 +13,7 @@ void LoadCsv::getMapCsv(eMapNames mname,vector<vector<MapCell>>& mapdata)
 	int c = 0;
 
 	bool isTitle = true;
+	short layernumber = 0;
 
 	vector<int>			 int_tmpvec;
 	vector<bool>		 bool_tmpvec;
@@ -24,7 +25,7 @@ void LoadCsv::getMapCsv(eMapNames mname,vector<vector<MapCell>>& mapdata)
 
 	vector<MapCell> tmpmapcells;
 	
-	//layer1
+	//layer1,2,3
 	while (true)
 	{
 		c = FileRead_getc(fp);
@@ -33,18 +34,17 @@ void LoadCsv::getMapCsv(eMapNames mname,vector<vector<MapCell>>& mapdata)
 		{
 			while (c != '\n')
 				c = FileRead_getc(fp);
+			layernumber++;
 
-			if (isTitle==true) {//読み込みたいレイヤーならwhile続ける
-				isTitle = false;
+			if (layernumber <= 3)
 				continue;
-			}
-			else {
-				break;//次のレイヤーへ進む
-				isTitle = true;
-			}
+			else
+				break;
 		}
 		else if (c == ',')//カンマなら数値化する
 		{
+			if (str == "")
+				continue;
 			int_tmpvec.push_back(atoi(str.c_str()));
 			str.erase(str.begin(), str.end());
 		}
@@ -54,91 +54,22 @@ void LoadCsv::getMapCsv(eMapNames mname,vector<vector<MapCell>>& mapdata)
 				continue;
 			int_tmpvec.push_back(atoi(str.c_str()));
 			str.erase(str.begin(), str.end());
-			layer1.push_back(int_tmpvec);
+			switch (layernumber)
+			{
+			case 1:
+				layer1.push_back(int_tmpvec);
+				break;
+			case 2:
+				layer2.push_back(int_tmpvec);
+				break;
+			case 3:
+				layer3.push_back(int_tmpvec);
+				break;
+			default:
+				ERR("レイヤー範囲外です");
+				break;
+			}
 			int_tmpvec.clear();
-		}
-		else if (c == EOF) {
-			break;
-		}
-		else {
-			str.push_back(c);
-		}
-	}
-	//layer2
-	while (true)
-	{
-		c = FileRead_getc(fp);
-
-		if (isCharactor(c) == true)//文字だった行は読み飛ばす(0～9,\n,\rはのぞく)
-		{
-			while (c != '\n')
-				c = FileRead_getc(fp);
-
-			if (isTitle == true) {//読み込みたいレイヤーならwhile続ける
-				isTitle = false;
-				continue;
-			}
-			else {
-				break;//次のレイヤーへ進む
-				isTitle = true;
-			}
-		}
-		else if (c == ',')//カンマなら数値化する
-		{
-			int_tmpvec.push_back(atoi(str.c_str()));
-			str.erase(str.begin(), str.end());
-		}
-		else if (c == '\n' || c == '\r')
-		{
-			if (str == "")
-				continue;
-			int_tmpvec.push_back(atoi(str.c_str()));
-			str.erase(str.begin(), str.end());
-			layer2.push_back(int_tmpvec);
-			int_tmpvec.clear();
-		}
-		else if (c == EOF) {
-			break;
-		}
-		else {
-			str.push_back(c);
-		}
-	}
-	//layer3
-	while (true)
-	{
-		c = FileRead_getc(fp);
-
-		if (isCharactor(c) == true)//文字だった行は読み飛ばす(0～9,\n,\rはのぞく)
-		{
-			while (c != '\n')
-				c = FileRead_getc(fp);
-
-			if (isTitle == true) {//読み込みたいレイヤーならwhile続ける
-				isTitle = false;
-				continue;
-			}
-			else {
-				break;//次のレイヤーへ進む
-				isTitle = true;
-			}
-		}
-		else if (c == ',')//カンマなら数値化する
-		{
-			int_tmpvec.push_back(atoi(str.c_str()));
-			str.erase(str.begin(), str.end());
-		}
-		else if (c == '\n' || c == '\r')
-		{
-			if (str == "")
-				continue;
-			int_tmpvec.push_back(atoi(str.c_str()));
-			str.erase(str.begin(), str.end());
-			layer3.push_back(int_tmpvec);
-			int_tmpvec.clear();
-		}
-		else if (c == EOF) {
-			break;
 		}
 		else {
 			str.push_back(c);
@@ -153,18 +84,18 @@ void LoadCsv::getMapCsv(eMapNames mname,vector<vector<MapCell>>& mapdata)
 		{
 			while (c != '\n')
 				c = FileRead_getc(fp);
+			layernumber++;
 
-			if (isTitle == true) {//読み込みたいレイヤーならwhile続ける
-				isTitle = false;
-				continue;
-			}
-			else {
+
+			if (layernumber <= 4)
+				continue;//読み込みたいレイヤーならwhile続ける
+			else
 				break;//次のレイヤーへ進む
-				isTitle = true;
-			}
 		}
 		else if (c == ',')//カンマなら数値化する
 		{
+			if (str == "")
+				continue;
 			bool_tmpvec.push_back(ConvertPassageFlag(atoi(str.c_str())));
 			str.erase(str.begin(), str.end());
 		}
@@ -176,9 +107,6 @@ void LoadCsv::getMapCsv(eMapNames mname,vector<vector<MapCell>>& mapdata)
 			str.erase(str.begin(), str.end());
 			passflag.push_back(bool_tmpvec);
 			bool_tmpvec.clear();
-		}
-		else if (c == EOF) {
-			break;
 		}
 		else {
 			str.push_back(c);
